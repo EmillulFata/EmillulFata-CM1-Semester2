@@ -79,7 +79,8 @@ class SistemPerpustakaan {
   void tampilMahasiswa() {
     System.out.println("\n[ DATA MAHASISWA ]");
     System.out.println("------------------------------------------------------------------");
-    System.out.printf("%-10s | %-15s | %-25s\n", "NIM", "Nama", "Program Studi");
+    System.out.printf("%-10s | %-15s | %-25s\n",
+        "NIM", "Nama", "Program Studi");
     System.out.println("------------------------------------------------------------------");
 
     String[] printed = new String[data.length];
@@ -91,7 +92,8 @@ class SistemPerpustakaan {
           isDuplicate = true;
       }
       if (!isDuplicate) {
-        System.out.printf("%-10s | %-15s | %-25s\n", p.mhs.nim, p.mhs.nama, p.mhs.prodi);
+        System.out.printf("%-10s | %-15s | %-25s\n",
+            p.mhs.nim, p.mhs.nama, p.mhs.prodi);
         printed[count++] = p.mhs.nim;
       }
     }
@@ -121,9 +123,15 @@ class SistemPerpustakaan {
   }
 
   void tampilData() {
+    System.out.println("\n[ DATA PEMINJAMAN ]");
+    System.out.println("--------------------------------------------------------------------------");
+    System.out.printf("%-10s | %-15s | %-8s | %-13s | %-10s\n",
+        "Nama", "Judul Buku", "Lama", "Terlambat", "Denda");
+    System.out.println("--------------------------------------------------------------------------");
     for (Peminjaman p : data) {
       p.tampil();
     }
+    System.out.println("--------------------------------------------------------------------------");
   }
 
   void insertionSort() {
