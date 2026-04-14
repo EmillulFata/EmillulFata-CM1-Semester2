@@ -102,7 +102,7 @@ class SistemPerpustakaan {
 
   void tampilBuku() {
     System.out.println("\n[ DATA BUKU ]");
-    System.out.println("----------------------------------------------------------");
+    System.out.println  ("----------------------------------------------------------");
     System.out.printf("%-10s | %-20s | %-6s\n", "Kode", "Judul Buku", "Tahun");
     System.out.println("----------------------------------------------------------");
 

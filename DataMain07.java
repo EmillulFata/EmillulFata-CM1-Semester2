@@ -46,7 +46,8 @@ public class DataMain07 {
                     }
                     break;
                 case 0:
-                    System.out.println("Keluar...");
+                    System.out.println();
+                    System.out.println("Terima Kasih telah menggunakan sistem perpustakaan kami...");
                     break;
                 default:
                     System.out.println("Menu tidak ada!");
