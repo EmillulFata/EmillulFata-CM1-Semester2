@@ -27,12 +27,12 @@ public class DataMain07 {
                     sistem.tampilBuku();
                     break;
                 case 3:
-                    sistem.tampilData();
+                    sistem.tampilDataPeminjaman();
                     break;
                 case 4:
-                    sistem.insertionSort();
+                    sistem.insertionSortDenda();
                     System.out.println("\nSetelah diurutkan (Denda terbesar):");
-                    sistem.tampilData(); // Memanggil ulang list setelah disort
+                    sistem.tampilDataPeminjaman(); // Memanggil ulang list setelah disort
                     break;
                 case 5:
                     sistem.insertionSortNIM(); // Sort dulu agar binary search jalan

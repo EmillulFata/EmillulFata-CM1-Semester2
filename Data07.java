@@ -55,7 +55,7 @@ class Peminjaman {
   }
 }
 
-// ================== CLASS MANAGER ==================
+// ================== CLASS MANAGER Perpustakaan ==================
 class SistemPerpustakaan {
   Peminjaman[] data = new Peminjaman[5];
 
@@ -102,7 +102,7 @@ class SistemPerpustakaan {
 
   void tampilBuku() {
     System.out.println("\n[ DATA BUKU ]");
-    System.out.println  ("----------------------------------------------------------");
+    System.out.println("----------------------------------------------------------");
     System.out.printf("%-10s | %-20s | %-6s\n", "Kode", "Judul Buku", "Tahun");
     System.out.println("----------------------------------------------------------");
 
@@ -122,7 +122,7 @@ class SistemPerpustakaan {
     System.out.println("----------------------------------------------------------");
   }
 
-  void tampilData() {
+  void tampilDataPeminjaman() {
     System.out.println("\n[ DATA PEMINJAMAN ]");
     System.out.println("--------------------------------------------------------------------------");
     System.out.printf("%-10s | %-15s | %-8s | %-13s | %-10s\n",
@@ -134,7 +134,7 @@ class SistemPerpustakaan {
     System.out.println("--------------------------------------------------------------------------");
   }
 
-  void insertionSort() {
+  void insertionSortDenda() {
     for (int i = 1; i < data.length; i++) {
       Peminjaman temp = data[i];
       int j = i - 1;
